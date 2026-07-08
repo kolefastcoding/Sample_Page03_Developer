@@ -1,0 +1,328 @@
+@media (max-width: 1100px) {
+  :root {
+    --container-width: 960px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr 430px 1fr;
+    gap: 32px;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+  }
+
+  .hero-person {
+    width: 500px;
+  }
+
+  .stats-founder-inner {
+    grid-template-columns: 380px 1fr;
+  }
+
+  .stats-card {
+    padding-inline: 36px;
+  }
+
+  .brand-list {
+    gap: 24px;
+  }
+
+  .team-grid {
+    gap: 22px;
+  }
+
+  .contact-card {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --section-padding: 80px;
+    --container-padding: 20px;
+  }
+
+  .header {
+    position: fixed;
+    padding-block: 18px;
+    background-color: rgba(248, 248, 245, 0.92);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-toggle {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 110px;
+  }
+
+  .hero-inner {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .hero-content,
+  .hero-intro {
+    padding-bottom: 0;
+  }
+
+  .hero-title {
+    max-width: 620px;
+    font-size: 5.2rem;
+  }
+
+  .hero-desc {
+    max-width: 560px;
+  }
+
+  .hero-banner {
+    order: 2;
+  }
+
+  .hero-person {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .hero-intro {
+    order: 3;
+  }
+
+  .intro-title,
+  .intro-desc {
+    max-width: 100%;
+  }
+
+  .stats-founder {
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .stats-founder-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr 28px 1fr;
+  }
+
+  .testimonial-inner,
+  .about-inner,
+  .blog-layout,
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-inner,
+  .about-inner {
+    gap: 48px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-prev {
+    left: 0;
+  }
+
+  .team-next {
+    right: 0;
+  }
+
+  .blog-featured-img {
+    height: 320px;
+  }
+
+  .contact-card {
+    padding: 36px;
+  }
+
+  .contact-img {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 4.6rem;
+  }
+
+  .stats-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .founder-card {
+    padding: 32px 28px;
+  }
+
+  .founder-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .founder-line {
+    width: 100%;
+  }
+
+  .brand-list {
+    flex-wrap: wrap;
+  }
+
+  .testimonial-card {
+    padding: 32px 28px;
+  }
+
+  .testimonial-dots {
+    position: static;
+    margin-top: 24px;
+  }
+
+  .about-chart-img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .blog-small-card {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .blog-thumb {
+    width: 120px;
+    height: 90px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --section-padding: 64px;
+    --container-padding: 16px;
+  }
+
+  .logo,
+  .logo-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-desc {
+    font-size: 1.5rem;
+  }
+
+  .hero-person {
+    max-width: 390px;
+  }
+
+  .stats-founder-inner {
+    border-width: 6px;
+  }
+
+  .stats-card {
+    padding: 28px 24px;
+  }
+
+  .stat-item strong {
+    font-size: 3.6rem;
+  }
+
+  .testimonial-heading h2,
+  .about-content h2,
+  .contact-content h2 {
+    max-width: none;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-img {
+    height: 260px;
+  }
+
+  .team-nav {
+    display: none;
+  }
+
+  .blog-small-card {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-thumb {
+    width: 100%;
+    height: 180px;
+  }
+
+  .blog-featured-img {
+    height: 220px;
+  }
+
+  .contact-card {
+    padding: 24px;
+  }
+
+  .contact-img {
+    min-height: 280px;
+  }
+
+  .social-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .stats-card {
+    padding: 24px 20px;
+  }
+
+  .founder-card {
+    padding: 28px 20px;
+  }
+
+  .testimonial-card {
+    padding: 28px 20px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+}

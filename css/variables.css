@@ -1,0 +1,35 @@
+:root {
+  --font-primary: "Inter", "Poppins", Arial, sans-serif;
+
+  --color-primary: #ff5a47;
+  --color-primary-dark: #ef412f;
+
+  --color-dark: #061b55;
+  --color-dark-2: #0a246f;
+  --color-text: #102a67;
+  --color-muted: #6979a6;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-light: #f8f8f5;
+  --color-light-2: #f3f4f2;
+  --color-border: #f0d7d1;
+
+  --container-width: 1200px;
+  --container-padding: 24px;
+
+  --section-padding: 110px;
+  --section-padding-small: 80px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 999px;
+
+  --shadow-sm: 0 12px 30px rgba(10, 36, 111, 0.08);
+  --shadow-md: 0 24px 60px rgba(10, 36, 111, 0.12);
+  --shadow-lg: 0 40px 100px rgba(10, 36, 111, 0.16);
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
