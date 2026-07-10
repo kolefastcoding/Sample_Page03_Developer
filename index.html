@@ -14,148 +14,226 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="inner header-inner">
+    <div class="container">
+      <header class="l-header">
+        <div class="wrapper l-header__wrapper">
           <a
-            class="logo"
+            class="l-header__logo"
             href="./index.html"
             aria-label="Kalervo Portfolio home"
           >
             <img
-              class="logo-img"
+              class="l-header__logo-image"
               src="./assets/images/logo.svg"
               alt="KP Logo"
             />
           </a>
 
-          <nav class="nav" aria-label="Main navigation">
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home">Home</a>
+          <nav class="l-header__nav" aria-label="Main navigation">
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item">
+                <a
+                  class="l-header__nav-link l-header__nav-link--active"
+                  href="#home"
+                >
+                  Home
+                </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#events">Events</a>
+
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="#events">Events</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+
+              <li class="l-header__nav-item">
+                <a class="l-header__nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
 
-          <button class="nav-toggle" type="button" aria-label="Open navigation">
-            <span></span>
-            <span></span>
-            <span></span>
+          <button
+            class="l-header__toggle"
+            type="button"
+            aria-label="Open navigation"
+          >
+            <span class="l-header__toggle-line"></span>
+            <span class="l-header__toggle-line"></span>
+            <span class="l-header__toggle-line"></span>
           </button>
         </div>
       </header>
 
-      <main>
-        <section class="hero" id="home">
-          <div class="inner hero-inner">
-            <div class="hero-banner">
+      <main class="l-main">
+        <section class="p-section-hero" id="home">
+          <div class="wrapper p-section-hero__wrapper">
+            <div class="p-section-hero__banner">
               <img
-                class="hero-person"
+                class="p-section-hero__image"
                 src="./assets/images/Banner.png"
                 alt="Kalervo portrait"
+                width="500"
+                height="500"
+                loading="eager"
               />
             </div>
 
-            <div class="hero-content">
-              <h1 class="hero-title">
+            <div class="p-section-hero__content">
+              <h1 class="p-section-hero__title">
                 It’s Kalervo <br />
                 From Finland.
               </h1>
 
-              <p class="hero-desc">
+              <p class="p-section-hero__description">
                 A man who only focus to build quality-full product that can help
                 user without casting any money.
               </p>
 
-              <ul class="social-list" aria-label="Social media links">
-                <li>
-                  <a class="social-link" href="#" aria-label="LinkedIn">
-                    <img src="./assets/icons/icon-linkedin.svg" alt="" />
+              <ul class="c-social" aria-label="Social media links">
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="LinkedIn">
+                    <img
+                      class="c-social__icon"
+                      src="./assets/icons/icon-linkedin.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li>
-                  <a class="social-link" href="#" aria-label="Twitter">
-                    <img src="./assets/icons/icon-twitter.svg" alt="" />
+
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="Twitter">
+                    <img
+                      class="c-social__icon"
+                      src="./assets/icons/icon-twitter.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li>
-                  <a class="social-link" href="#" aria-label="WhatsApp">
-                    <img src="./assets/icons/icon-whatsapp.svg" alt="" />
+
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="WhatsApp">
+                    <img
+                      class="c-social__icon"
+                      src="./assets/icons/icon-whatsapp.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
-                <li>
-                  <a class="social-link" href="#" aria-label="Medium">
-                    <img src="./assets/icons/icon-medium.svg" alt="" />
+
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="Medium">
+                    <img
+                      class="c-social__icon"
+                      src="./assets/icons/icon-medium.svg"
+                      alt=""
+                    />
                   </a>
                 </li>
               </ul>
             </div>
 
-            <div class="hero-intro">
-              <p class="section-label">Formal Introduction</p>
+            <div class="p-section-hero__intro">
+              <p class="p-section-hero__label">Formal Introduction</p>
 
-              <h2 class="intro-title">
-                Hello, I’m Kalervo Pohjamo, CEO & Founder of Atlassian and
+              <h2 class="p-section-hero__intro-title">
+                Hello, I’m Kalervo Pohjamo, CEO &amp; Founder of Atlassian and
                 Trello
               </h2>
 
-              <p class="intro-desc">
-                I’m founder & chief executing officer at Atlassian Trello, &
-                Confluence. In my life, I builded lot’s of quality-full product
-                that can help people.
+              <p class="p-section-hero__intro-description">
+                I’m founder &amp; chief executing officer at Atlassian Trello,
+                &amp; Confluence. In my life, I builded lot’s of quality-full
+                product that can help people.
               </p>
 
-              <a class="btn btn-primary" href="#about">
-                Read About Me
-                <img src="./assets/icons/icon-arrow-right.svg" alt="" />
+              <a class="c-button c-button--primary" href="#about">
+                <span class="c-button__text">Read About Me</span>
+                <img
+                  class="c-button__icon"
+                  src="./assets/icons/ArrowRight.svg"
+                  alt=""
+                />
               </a>
             </div>
 
-            <div class="hero-stats" aria-label="Experience and founder brands">
-              <div class="stats-card">
-                <div class="stat-item">
-                  <strong>19+</strong>
-                  <span>Years of Experience</span>
+            <div
+              class="p-section-hero__stats"
+              aria-label="Experience and founder brands"
+            >
+              <div class="p-section-hero__stats-card">
+                <div class="p-section-hero__stat-item">
+                  <strong class="p-section-hero__stat-number">19+</strong>
+                  <span class="p-section-hero__stat-text">
+                    Years of Experience
+                  </span>
                 </div>
 
-                <div class="stat-divider" aria-hidden="true"></div>
+                <div
+                  class="p-section-hero__stat-divider"
+                  aria-hidden="true"
+                ></div>
 
-                <div class="stat-item">
-                  <strong>750+</strong>
-                  <span>Colleague/Team Members</span>
+                <div class="p-section-hero__stat-item">
+                  <strong class="p-section-hero__stat-number">750+</strong>
+                  <span class="p-section-hero__stat-text">
+                    Colleague/Team Members
+                  </span>
                 </div>
               </div>
 
-              <div class="founder-card">
-                <div class="founder-head">
-                  <h2>I’m Founder of</h2>
-                  <span class="founder-line" aria-hidden="true"></span>
+              <div class="p-section-hero__founder-card">
+                <div class="p-section-hero__founder-head">
+                  <h2 class="p-section-hero__founder-title">I’m Founder of</h2>
+                  <span
+                    class="p-section-hero__founder-line"
+                    aria-hidden="true"
+                  ></span>
                 </div>
 
-                <ul class="brand-list" aria-label="Founder brand list">
-                  <li>
-                    <img src="./assets/icons/brand-01.png" alt="Brand logo 1" />
+                <ul
+                  class="p-section-hero__brand-list"
+                  aria-label="Founder brand list"
+                >
+                  <li class="p-section-hero__brand-item">
+                    <img
+                      class="p-section-hero__brand-image"
+                      src="./assets/icons/brand-01.png"
+                      alt="Brand logo 1"
+                    />
                   </li>
-                  <li>
-                    <img src="./assets/icons/brand-02.png" alt="Brand logo 2" />
+
+                  <li class="p-section-hero__brand-item">
+                    <img
+                      class="p-section-hero__brand-image"
+                      src="./assets/icons/brand-02.png"
+                      alt="Brand logo 2"
+                    />
                   </li>
-                  <li>
-                    <img src="./assets/icons/brand-03.png" alt="Brand logo 3" />
+
+                  <li class="p-section-hero__brand-item">
+                    <img
+                      class="p-section-hero__brand-image"
+                      src="./assets/icons/brand-03.png"
+                      alt="Brand logo 3"
+                    />
                   </li>
-                  <li>
-                    <img src="./assets/icons/brand-04.png" alt="Brand logo 4" />
+
+                  <li class="p-section-hero__brand-item">
+                    <img
+                      class="p-section-hero__brand-image"
+                      src="./assets/icons/brand-04.png"
+                      alt="Brand logo 4"
+                    />
                   </li>
-                  <li>
-                    <img src="./assets/icons/brand-05.png" alt="Brand logo 5" />
+
+                  <li class="p-section-hero__brand-item">
+                    <img
+                      class="p-section-hero__brand-image"
+                      src="./assets/icons/brand-05.png"
+                      alt="Brand logo 5"
+                    />
                   </li>
                 </ul>
               </div>
@@ -163,307 +241,400 @@
           </div>
         </section>
 
-        <button class="c-theme-toggle" aria-label="Toggle theme">
-          &#9728;
+        <button
+          class="c-theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          aria-pressed="false"
+        >
+          <span class="c-theme-toggle__icon" aria-hidden="true">&#9728;</span>
         </button>
 
-        <section class="testimonial" id="events">
-          <div class="inner testimonial-inner">
-            <div class="testimonial-heading">
-              <p class="section-label">Customer Testimonial</p>
-              <h2>Consumer thought about my product!</h2>
+        <section
+          class="p-section-testimonial"
+          id="events"
+          aria-labelledby="testimonial-title"
+        >
+          <div class="wrapper p-section-testimonial__wrapper">
+            <div class="p-section-testimonial__heading">
+              <p class="p-section-testimonial__label">Customer Testimonial</p>
 
-              <div class="testimonial-words" aria-hidden="true">
-                <span>Wow!</span>
-                <span>Nice!</span>
-                <span>Love</span>
+              <h2 class="p-section-testimonial__title" id="testimonial-title">
+                Consumer thought about my product!
+              </h2>
+
+              <div class="p-section-testimonial__words" aria-hidden="true">
+                <span class="p-section-testimonial__word">Wow!</span>
+                <span class="p-section-testimonial__word">Nice!</span>
+                <span class="p-section-testimonial__word">Love</span>
               </div>
             </div>
 
-            <article class="testimonial-card">
-              <p class="testimonial-text">
+            <article class="p-section-testimonial__card">
+              <p class="p-section-testimonial__text">
                 Now that we’ve switched to a remote environment, with the use of
                 Trello, we can now limit the number of meetings we have
                 regarding specific projects and turn to Trello for updates
                 instead.
               </p>
 
-              <div class="testimonial-author">
+              <div class="p-section-testimonial__author">
                 <img
-                  class="author-avatar"
+                  class="p-section-testimonial__author-avatar"
                   src="./assets/images/testimonial-avatar.png"
                   alt="Kalvin Gilbert"
                 />
 
-                <div>
-                  <h3>Kalvin Gilbert</h3>
-                  <p>Product Designer at Google</p>
+                <div class="p-section-testimonial__author-info">
+                  <h3 class="p-section-testimonial__author-name">
+                    Kalvin Gilbert
+                  </h3>
+                  <p class="p-section-testimonial__author-position">
+                    Product Designer at Google
+                  </p>
                 </div>
               </div>
 
-              <div class="testimonial-dots" aria-label="Testimonial pagination">
+              <div
+                class="p-section-testimonial__dots"
+                aria-label="Testimonial pagination"
+              >
                 <button
-                  class="dot active"
+                  class="p-section-testimonial__dot p-section-testimonial__dot--active"
                   type="button"
                   aria-label="Slide 1"
                 ></button>
-                <button class="dot" type="button" aria-label="Slide 2"></button>
-                <button class="dot" type="button" aria-label="Slide 3"></button>
+
+                <button
+                  class="p-section-testimonial__dot"
+                  type="button"
+                  aria-label="Slide 2"
+                ></button>
+
+                <button
+                  class="p-section-testimonial__dot"
+                  type="button"
+                  aria-label="Slide 3"
+                ></button>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="about" id="about">
-          <div class="inner about-inner">
-            <div class="about-visual">
+        <section
+          class="p-section-about"
+          id="about"
+          aria-labelledby="about-title"
+        >
+          <div class="wrapper p-section-about__wrapper">
+            <div class="p-section-about__visual">
               <img
-                class="about-chart-img"
+                class="p-section-about__image"
                 src="./assets/images/about-chart.png"
                 alt="Social followers chart"
+                loading="lazy"
               />
             </div>
 
-            <div class="about-content">
-              <p class="section-label">Read About Me</p>
+            <div class="p-section-about__content">
+              <p class="p-section-about__label">Read About Me</p>
 
-              <h2>I develop software that assists people digitally.</h2>
+              <h2 class="p-section-about__title" id="about-title">
+                I develop software that assists people digitally.
+              </h2>
 
-              <p>
+              <p class="p-section-about__description">
                 Suspendisse dapibus odio ut libero vulputate, id condimentum sem
                 rhoncus. Mauris nisi tortor, dignissim id ipsum vitae, feugiat
                 molestie risus.
               </p>
 
-              <a class="btn btn-outline" href="#contact"> Book Appointments </a>
+              <a class="c-button c-button--secondary" href="#contact">
+                Book Appointments
+              </a>
             </div>
           </div>
         </section>
 
-        <section class="team" aria-labelledby="team-title">
-          <div class="inner team-inner">
-            <div class="section-heading">
-              <p class="section-label">Team Members</p>
-              <h2 id="team-title">Colleague & team members</h2>
+        <section class="p-section-team" aria-labelledby="team-title">
+          <div class="wrapper p-section-team__wrapper">
+            <div class="p-section-team__heading">
+              <p class="p-section-team__label">Team Members</p>
+
+              <h2 class="p-section-team__title" id="team-title">
+                Colleague &amp; team members
+              </h2>
             </div>
 
             <button
-              class="team-nav team-prev"
+              class="p-section-team__nav p-section-team__nav--prev"
               type="button"
               aria-label="Previous team member"
             >
-              <img src="./assets/icons/icon-arrow-left.svg" alt="" />
+              <img
+                class="p-section-team__nav-icon"
+                src="./assets/icons/icon-arrow-left.svg"
+                alt=""
+              />
             </button>
 
-            <div class="team-grid">
-              <article class="team-card">
-                <img
-                  class="team-img"
-                  src="./assets/images/member-01.png"
-                  alt="Cameron Williamson"
-                />
-                <h3>Cameron Williamson</h3>
-                <p>Assistant Manager</p>
-              </article>
+            <ul class="p-section-team__list" aria-label="Team member list">
+              <li class="p-section-team__item">
+                <div class="p-section-team__image-wrap">
+                  <img
+                    class="p-section-team__image"
+                    src="./assets/images/member-01.png"
+                    alt="Cameron Williamson"
+                    loading="lazy"
+                  />
+                </div>
 
-              <article class="team-card">
-                <img
-                  class="team-img"
-                  src="./assets/images/member-02.png"
-                  alt="Cameron Williamson"
-                />
-                <h3>Cameron Williamson</h3>
-                <p>Supporting Assistant</p>
-              </article>
+                <h3 class="p-section-team__name">Cameron Williamson</h3>
+                <p class="p-section-team__position">Assistant Manager</p>
+              </li>
 
-              <article class="team-card">
-                <img
-                  class="team-img"
-                  src="./assets/images/member-03.png"
-                  alt="Cameron Williamson"
-                />
-                <h3>Cameron Williamson</h3>
-                <p>Product Manager</p>
-              </article>
+              <li class="p-section-team__item">
+                <div class="p-section-team__image-wrap">
+                  <img
+                    class="p-section-team__image"
+                    src="./assets/images/member-02.png"
+                    alt="Cameron Williamson"
+                    loading="lazy"
+                  />
+                </div>
 
-              <article class="team-card">
-                <img
-                  class="team-img"
-                  src="./assets/images/member-04.png"
-                  alt="Cameron Williamson"
-                />
-                <h3>Cameron Williamson</h3>
-                <p>Head of Case & Service</p>
-              </article>
-            </div>
+                <h3 class="p-section-team__name">Cameron Williamson</h3>
+                <p class="p-section-team__position">Supporting Assistant</p>
+              </li>
+
+              <li class="p-section-team__item">
+                <div class="p-section-team__image-wrap">
+                  <img
+                    class="p-section-team__image"
+                    src="./assets/images/member-03.png"
+                    alt="Cameron Williamson"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h3 class="p-section-team__name">Cameron Williamson</h3>
+                <p class="p-section-team__position">Product Manager</p>
+              </li>
+
+              <li class="p-section-team__item">
+                <div class="p-section-team__image-wrap">
+                  <img
+                    class="p-section-team__image"
+                    src="./assets/images/member-04.png"
+                    alt="Cameron Williamson"
+                    loading="lazy"
+                  />
+                </div>
+
+                <h3 class="p-section-team__name">Cameron Williamson</h3>
+                <p class="p-section-team__position">
+                  Head of Sales &amp; Services
+                </p>
+              </li>
+            </ul>
 
             <button
-              class="team-nav team-next"
+              class="p-section-team__nav p-section-team__nav--next"
               type="button"
               aria-label="Next team member"
             >
-              <img src="./assets/icons/icon-arrow-right.svg" alt="" />
+              <img
+                class="p-section-team__nav-icon"
+                src="./assets/icons/icon-arrow-right.svg"
+                alt=""
+              />
             </button>
 
-            <div class="team-progress" aria-hidden="true">
-              <span></span>
+            <div class="p-section-team__progress" aria-hidden="true">
+              <span class="p-section-team__progress-bar"></span>
             </div>
           </div>
         </section>
 
-        <section class="blog" aria-labelledby="blog-title">
-          <div class="inner blog-inner">
-            <div class="section-heading">
-              <p class="section-label">Blogs</p>
-              <h2 id="blog-title">Latest article</h2>
+        <section class="p-section-blog" aria-labelledby="blog-title">
+          <div class="wrapper p-section-blog__wrapper">
+            <div class="p-section-blog__heading">
+              <p class="p-section-blog__label">Blogs</p>
+
+              <h2 class="p-section-blog__title" id="blog-title">
+                Latest article
+              </h2>
             </div>
 
-            <div class="blog-layout">
-              <div class="blog-list">
-                <article class="blog-small-card">
+            <div class="p-section-blog__layout">
+              <ul class="p-section-blog__list" aria-label="Latest blog list">
+                <li class="p-section-blog__item">
                   <img
-                    class="blog-thumb"
+                    class="p-section-blog__thumb"
                     src="./assets/images/blog-01.png"
                     alt="Colorful abstract blog thumbnail"
+                    loading="lazy"
                   />
 
-                  <div class="blog-small-content">
-                    <p class="blog-meta">
+                  <div class="p-section-blog__content">
+                    <p class="p-section-blog__meta">
                       Jun 19 · 5 Min read
-                      <span>Vol-Mor</span>
+                      <span class="p-section-blog__category">Vol-Mor</span>
                     </p>
 
-                    <h3>
-                      <a href="#">
+                    <h3 class="p-section-blog__article-title">
+                      <a class="p-section-blog__link" href="#">
                         How to Beat the Heat: See It Coming More than a Week
                         Ahead!
                       </a>
                     </h3>
 
-                    <p>
+                    <p class="p-section-blog__excerpt">
                       Leverice this in one of Fastest Day. No matter your
                       environ...
                     </p>
                   </div>
-                </article>
+                </li>
 
-                <article class="blog-small-card">
+                <li class="p-section-blog__item">
                   <img
-                    class="blog-thumb"
+                    class="p-section-blog__thumb"
                     src="./assets/images/blog-02.png"
                     alt="Shoe blog thumbnail"
+                    loading="lazy"
                   />
 
-                  <div class="blog-small-content">
-                    <p class="blog-meta">
+                  <div class="p-section-blog__content">
+                    <p class="p-section-blog__meta">
                       May 11 · 7 Min read
-                      <span>IT</span>
+                      <span class="p-section-blog__category">IT</span>
                     </p>
 
-                    <h3>
-                      <a href="#">
+                    <h3 class="p-section-blog__article-title">
+                      <a class="p-section-blog__link" href="#">
                         Ten fastest-growing apps in 2022 including some you
                         don’t know
                       </a>
                     </h3>
 
-                    <p>
+                    <p class="p-section-blog__excerpt">
                       The fastest-growing apps in 2022. If there is one thing
                       that...
                     </p>
                   </div>
-                </article>
+                </li>
 
-                <article class="blog-small-card">
+                <li class="p-section-blog__item">
                   <img
-                    class="blog-thumb"
+                    class="p-section-blog__thumb"
                     src="./assets/images/blog-03.png"
                     alt="Robot blog thumbnail"
+                    loading="lazy"
                   />
 
-                  <div class="blog-small-content">
-                    <p class="blog-meta">
+                  <div class="p-section-blog__content">
+                    <p class="p-section-blog__meta">
                       Feb 5 · 6 Min read
-                      <span>Visual Design</span>
+                      <span class="p-section-blog__category">
+                        Visual Design
+                      </span>
                     </p>
 
-                    <h3>
-                      <a href="#">
+                    <h3 class="p-section-blog__article-title">
+                      <a class="p-section-blog__link" href="#">
                         5 things to learn from type designers while dealing with
                         visuals
                       </a>
                     </h3>
 
-                    <p>
+                    <p class="p-section-blog__excerpt">
                       Hello, Designers! Ever had this thought, “Something is...
                     </p>
                   </div>
-                </article>
-              </div>
+                </li>
+              </ul>
 
-              <article class="blog-featured-card">
+              <div class="p-section-blog__featured">
                 <img
-                  class="blog-featured-img"
+                  class="p-section-blog__featured-image"
                   src="./assets/images/blog-featured.png"
                   alt="Developers working together"
+                  loading="lazy"
                 />
 
-                <div class="blog-featured-content">
-                  <p class="blog-meta">
+                <div class="p-section-blog__featured-content">
+                  <p class="p-section-blog__meta">
                     Dec 28 · 7 Min read
-                    <span>Leadership</span>
+                    <span class="p-section-blog__category">Leadership</span>
                   </p>
 
-                  <h3>
-                    <a href="#">
+                  <h3 class="p-section-blog__featured-title">
+                    <a class="p-section-blog__link" href="#">
                       The path to technical leadership: how to go from developer
                       to team leader
                     </a>
                   </h3>
 
-                  <p>
+                  <p class="p-section-blog__featured-description">
                     If software development feels like it is only part of your
                     professional purpose, perhaps you should consider becoming a
                     tech lead.
                   </p>
 
-                  <a class="read-more" href="#">
-                    Read More
-                    <img src="./assets/icons/icon-arrow-right.svg" alt="" />
+                  <a class="c-read-more" href="#">
+                    <span class="c-read-more__text">Read More</span>
+                    <img
+                      class="c-read-more__icon"
+                      src="./assets/icons/icon-arrow-right.svg"
+                      alt=""
+                    />
                   </a>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="contact" id="contact">
-          <div class="inner contact-inner">
-            <div class="contact-card">
-              <div class="contact-media">
+        <section
+          class="p-section-contact"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <div class="wrapper p-section-contact__wrapper">
+            <div class="p-section-contact__card">
+              <div class="p-section-contact__media">
                 <img
-                  class="contact-img"
+                  class="p-section-contact__image"
                   src="./assets/images/contact-person.png"
                   alt="Kalervo portrait"
+                  loading="lazy"
                 />
               </div>
 
-              <div class="contact-content">
-                <p class="section-label">Stay In Touch</p>
+              <div class="p-section-contact__content">
+                <p class="p-section-contact__label">Stay In Touch</p>
 
-                <h2>You want to meet with me, Book appointments!</h2>
+                <h2 class="p-section-contact__title" id="contact-title">
+                  You want to meet with me, Book appointments!
+                </h2>
 
-                <p>
+                <p class="p-section-contact__description">
                   Integer nec tellus nisi. Orci varius natoque penatibus et
                   magnis dis parturient montes, nascetur ridiculus mus.
                 </p>
 
-                <form class="contact-form" action="#" method="post">
-                  <label class="sr-only" for="email">Email address</label>
+                <form class="p-section-contact__form" action="#" method="post">
+                  <label class="u-sr-only" for="email">Email address</label>
 
-                  <div class="input-wrap">
-                    <img src="./assets/icons/icon-email.svg" alt="" />
+                  <div class="p-section-contact__input-wrap">
+                    <img
+                      class="p-section-contact__input-icon"
+                      src="./assets/icons/icon-email.svg"
+                      alt=""
+                    />
+
                     <input
+                      class="p-section-contact__input"
                       id="email"
                       name="email"
                       type="email"
@@ -471,43 +642,74 @@
                     />
                   </div>
 
-                  <button class="btn btn-primary" type="submit">
+                  <button class="c-button c-button--primary" type="submit">
                     Book Appointments
                   </button>
                 </form>
 
-                <div class="contact-social">
-                  <p>Follow me on social media</p>
+                <div class="p-section-contact__social">
+                  <p class="p-section-contact__social-title">
+                    Follow me on social media
+                  </p>
 
-                  <ul class="social-list" aria-label="Contact social links">
-                    <li>
-                      <a class="social-link" href="#" aria-label="LinkedIn">
-                        <img src="./assets/icons/icon-linkedin.svg" alt="" />
+                  <ul class="c-social" aria-label="Contact social links">
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="LinkedIn">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-linkedin.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
-                    <li>
-                      <a class="social-link" href="#" aria-label="Twitter">
-                        <img src="./assets/icons/icon-twitter.svg" alt="" />
+
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="Twitter">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-twitter.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
-                    <li>
-                      <a class="social-link" href="#" aria-label="Instagram">
-                        <img src="./assets/icons/icon-instagram.svg" alt="" />
+
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="Instagram">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-instagram.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
-                    <li>
-                      <a class="social-link" href="#" aria-label="Facebook">
-                        <img src="./assets/icons/icon-facebook.svg" alt="" />
+
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="Facebook">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-facebook.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
-                    <li>
-                      <a class="social-link" href="#" aria-label="WhatsApp">
-                        <img src="./assets/icons/icon-whatsapp.svg" alt="" />
+
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="WhatsApp">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-whatsapp.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
-                    <li>
-                      <a class="social-link" href="#" aria-label="Medium">
-                        <img src="./assets/icons/icon-medium.svg" alt="" />
+
+                    <li class="c-social__item">
+                      <a class="c-social__link" href="#" aria-label="Medium">
+                        <img
+                          class="c-social__icon"
+                          src="./assets/icons/icon-medium.svg"
+                          alt=""
+                        />
                       </a>
                     </li>
                   </ul>
@@ -518,12 +720,15 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="inner footer-inner">
-          <p>© 2022 Kalervo Pohjamo from Finland.</p>
+      <footer class="l-footer">
+        <div class="wrapper l-footer__wrapper">
+          <p class="l-footer__copyright">
+            © 2022 Kalervo Pohjamo from Finland.
+          </p>
         </div>
       </footer>
     </div>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

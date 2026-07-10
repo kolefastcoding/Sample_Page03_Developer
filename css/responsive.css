@@ -3,56 +3,57 @@
     --container-width: 1080px;
   }
 
-  .hero {
+  .p-section-hero {
     min-height: 880px;
   }
 
-  .hero-inner {
+  .p-section-hero__wrapper {
     min-height: 880px;
   }
 
-  .hero-banner {
+  .p-section-hero__banner {
     width: 660px;
     max-width: 62vw;
     bottom: 130px;
   }
 
-  .hero-content {
+  .p-section-hero__content {
     top: 150px;
     max-width: 420px;
   }
 
-  .hero-title {
+  .p-section-hero__title {
     font-size: 5.2rem;
   }
 
-  .hero-desc {
+  .p-section-hero__description {
     max-width: 400px;
   }
 
-  .hero-intro {
+  .p-section-hero__intro {
     top: 70px;
     max-width: 360px;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
+    bottom: 35px;
     width: min(100%, 880px);
     grid-template-columns: 360px 1fr;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     padding-inline: 36px;
   }
 
-  .brand-list {
+  .p-section-hero__brand-list {
     gap: 24px;
   }
 
-  .team-grid {
+  .p-section-team__list {
     gap: 22px;
   }
 
-  .contact-card {
+  .p-section-contact__card {
     grid-template-columns: 280px 1fr;
   }
 }
@@ -63,41 +64,41 @@
     --container-padding: 22px;
   }
 
-  .hero-banner {
+  .p-section-hero__banner {
     width: 600px;
     max-width: 60vw;
   }
 
-  .hero-content {
+  .p-section-hero__content {
     max-width: 390px;
   }
 
-  .hero-title {
+  .p-section-hero__title {
     font-size: 4.8rem;
   }
 
-  .hero-intro {
+  .p-section-hero__intro {
     max-width: 330px;
   }
 
-  .intro-title {
+  .p-section-hero__intro-title {
     font-size: 1.8rem;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
     width: min(100%, 820px);
     grid-template-columns: 340px 1fr;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     padding: 34px 30px;
   }
 
-  .founder-card {
+  .p-section-hero__founder-card {
     padding: 34px 36px;
   }
 
-  .brand-list img {
+  .p-section-hero__brand-image {
     width: 36px;
     height: 36px;
   }
@@ -109,18 +110,18 @@
     --container-padding: 20px;
   }
 
-  .header {
+  .l-header {
     position: fixed;
     padding-block: 18px;
     background-color: rgba(248, 248, 245, 0.94);
     backdrop-filter: blur(12px);
   }
 
-  .nav {
+  .l-header__nav {
     display: none;
   }
 
-  .nav-toggle {
+  .l-header__toggle {
     width: 38px;
     height: 38px;
     display: inline-flex;
@@ -130,35 +131,29 @@
     gap: 5px;
   }
 
-  .nav-toggle span {
+  .l-header__toggle-line {
     width: 24px;
     height: 2px;
     background-color: var(--color-primary);
   }
 
-  .hero {
+  .p-section-hero {
     min-height: auto;
     padding-top: 110px;
     padding-bottom: 80px;
   }
 
-  .hero::before {
-    bottom: 0;
-    width: 760px;
-    height: 260px;
-  }
-
-  .hero-inner {
+  .p-section-hero__wrapper {
     min-height: auto;
     display: flex;
     flex-direction: column;
     gap: 36px;
   }
 
-  .hero-content,
-  .hero-intro,
-  .hero-banner,
-  .hero-stats {
+  .p-section-hero__content,
+  .p-section-hero__intro,
+  .p-section-hero__banner,
+  .p-section-hero__stats {
     position: relative;
     left: auto;
     right: auto;
@@ -169,152 +164,152 @@
     transform: none;
   }
 
-  .hero-content {
+  .p-section-hero__content {
     order: 1;
   }
 
-  .hero-banner {
+  .p-section-hero__banner {
     order: 2;
     display: flex;
     justify-content: center;
     pointer-events: auto;
   }
 
-  .hero-person {
+  .p-section-hero__image {
     width: min(100%, 560px);
   }
 
-  .hero-intro {
+  .p-section-hero__intro {
     order: 3;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
     order: 4;
     grid-template-columns: 1fr;
     margin-top: 10px;
   }
 
-  .hero-title {
+  .p-section-hero__title {
     max-width: 620px;
     font-size: 5.2rem;
   }
 
-  .hero-desc,
-  .intro-title,
-  .intro-desc {
+  .p-section-hero__description,
+  .p-section-hero__intro-title,
+  .p-section-hero__intro-description {
     max-width: 100%;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     grid-template-columns: 1fr 28px 1fr;
   }
 
-  .testimonial-inner,
-  .about-inner,
-  .blog-layout,
-  .contact-card {
+  .p-section-testimonial__wrapper,
+  .p-section-about__wrapper,
+  .p-section-blog__layout,
+  .p-section-contact__card {
     grid-template-columns: 1fr;
   }
 
-  .testimonial-inner,
-  .about-inner {
+  .p-section-testimonial__wrapper,
+  .p-section-about__wrapper {
     gap: 48px;
   }
 
-  .team-grid {
+  .p-section-team__list {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .team-prev {
+  .p-section-team__nav--prev {
     left: 0;
   }
 
-  .team-next {
+  .p-section-team__nav--next {
     right: 0;
   }
 
-  .blog-featured-img {
+  .p-section-blog__featured-image {
     height: 320px;
   }
 
-  .contact-card {
+  .p-section-contact__card {
     padding: 36px;
   }
 
-  .contact-img {
+  .p-section-contact__image {
     min-height: 360px;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-title {
+  .p-section-hero__title {
     font-size: 4.6rem;
   }
 
-  .hero-desc {
+  .p-section-hero__description {
     font-size: 1.6rem;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
     border-width: 6px;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     grid-template-columns: 1fr;
     gap: 28px;
     padding: 32px 28px;
   }
 
-  .stat-divider {
+  .p-section-hero__stat-divider {
     display: none;
   }
 
-  .founder-card {
+  .p-section-hero__founder-card {
     padding: 32px 28px;
   }
 
-  .founder-head {
+  .p-section-hero__founder-head {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
   }
 
-  .founder-line {
+  .p-section-hero__founder-line {
     width: 100%;
   }
 
-  .brand-list {
+  .p-section-hero__brand-list {
     flex-wrap: wrap;
   }
 
-  .testimonial-card {
+  .p-section-testimonial__card {
     padding: 32px 28px;
   }
 
-  .testimonial-dots {
+  .p-section-testimonial__dots {
     position: static;
     margin-top: 24px;
   }
 
-  .about-chart-img {
+  .p-section-about__image {
     width: 100%;
     max-width: 420px;
   }
 
-  .blog-small-card {
+  .p-section-blog__item {
     grid-template-columns: 120px 1fr;
   }
 
-  .blog-thumb {
+  .p-section-blog__thumb {
     width: 120px;
     height: 90px;
   }
 
-  .contact-form {
+  .p-section-contact__form {
     grid-template-columns: 1fr;
   }
 
-  .contact-form .btn {
+  .p-section-contact__form .c-button {
     width: 100%;
   }
 }
@@ -325,133 +320,140 @@
     --container-padding: 16px;
   }
 
-  .logo,
-  .logo-img {
+  .l-header__logo,
+  .l-header__logo-image {
     width: 36px;
     height: 36px;
   }
 
-  .hero {
+  .p-section-hero {
     padding-top: 96px;
     padding-bottom: 64px;
   }
 
-  .hero-inner {
+  .p-section-hero__wrapper {
     gap: 32px;
   }
 
-  .hero-title {
+  .p-section-hero__title {
     font-size: 4rem;
   }
 
-  .hero-desc {
+  .p-section-hero__description {
     font-size: 1.5rem;
   }
 
-  .hero-person {
+  .p-section-hero__image {
     width: min(100%, 390px);
   }
 
-  .social-list {
+  .c-social {
     flex-wrap: wrap;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
     border-width: 6px;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     gap: 26px;
     padding: 28px 24px;
   }
 
-  .stat-item strong {
+  .p-section-hero__stat-number {
     font-size: 3.6rem;
   }
 
-  .founder-card {
+  .p-section-hero__founder-card {
     padding: 30px 24px;
   }
 
-  .brand-list {
+  .p-section-hero__brand-list {
     gap: 22px;
   }
 
-  .brand-list img {
+  .p-section-hero__brand-image {
     width: 34px;
     height: 34px;
   }
 
-  .testimonial-heading h2,
-  .about-content h2,
-  .contact-content h2 {
+  .p-section-testimonial__title,
+  .p-section-about__title,
+  .p-section-contact__title {
     max-width: none;
   }
 
-  .team-grid {
+  .p-section-team__list {
     grid-template-columns: 1fr;
   }
 
-  .team-img {
+  .p-section-team__image {
     height: 260px;
   }
 
-  .team-nav {
+  .p-section-team__nav {
     display: none;
   }
 
-  .blog-small-card {
+  .p-section-blog__item {
     grid-template-columns: 1fr;
   }
 
-  .blog-thumb {
+  .p-section-blog__thumb {
     width: 100%;
     height: 180px;
   }
 
-  .blog-featured-img {
+  .p-section-blog__featured-image {
     height: 220px;
   }
 
-  .contact-card {
+  .p-section-contact__card {
     padding: 24px;
   }
 
-  .contact-img {
+  .p-section-contact__image {
     min-height: 280px;
+  }
+
+  .c-theme-toggle {
+    right: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
   }
 }
 
 @media (max-width: 390px) {
-  .hero-title {
+  .p-section-hero__title {
     font-size: 3.5rem;
   }
 
-  .btn {
+  .c-button {
     width: 100%;
   }
 
-  .hero-stats {
+  .p-section-hero__stats {
     border-width: 5px;
   }
 
-  .stats-card {
+  .p-section-hero__stats-card {
     padding: 24px 20px;
   }
 
-  .founder-card {
+  .p-section-hero__founder-card {
     padding: 28px 20px;
   }
 
-  .founder-head h2 {
+  .p-section-hero__founder-title {
     font-size: 1.6rem;
   }
 
-  .testimonial-card {
+  .p-section-testimonial__card {
     padding: 28px 20px;
   }
 
-  .contact-card {
+  .p-section-contact__card {
     padding: 20px;
   }
 }
