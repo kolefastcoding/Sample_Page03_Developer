@@ -305,11 +305,13 @@
   font-size: 2rem;
   font-style: italic;
 }
-
+.box-shadow_slider {
+  box-shadow: var(--shadow-md);
+}
 .p-section-testimonial__card {
   position: relative;
   padding: 40px 44px;
-  box-shadow: var(--shadow-md);
+  /* box-shadow: var(--shadow-md); */
 }
 
 .p-section-testimonial__text {

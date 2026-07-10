@@ -413,9 +413,13 @@
   }
 
   .p-section-contact__image {
+    width: 60%;
+    margin: 0 auto;
     min-height: 280px;
   }
-
+  .p-section-contact__title {
+    font-size: 18px;
+  }
   .c-theme-toggle {
     right: 20px;
     bottom: 20px;
