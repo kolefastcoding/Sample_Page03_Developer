@@ -461,3 +461,72 @@
     padding: 20px;
   }
 }
+
+@media (max-width: 1200px) {
+  .p-section-hero__decoration--rays-top {
+    left: -30px;
+    width: 135px;
+  }
+
+  .p-section-hero__decoration--crown {
+    top: 12px;
+    left: 53%;
+    width: 155px;
+  }
+
+  .p-section-hero__decoration--smile {
+    top: 385px;
+    right: -12px;
+    width: 160px;
+  }
+
+  .p-section-hero__decoration--rays-bottom {
+    left: -45px;
+    bottom: 170px;
+    width: 145px;
+  }
+
+  .p-section-hero__social-guide {
+    left: -50px;
+    bottom: -58px;
+    transform: scale(0.9);
+    transform-origin: right top;
+  }
+
+  .p-section-hero__decoration--intro-arrow {
+    left: -52px;
+    width: 46px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .p-section-hero__social-guide,
+  .p-section-hero__decoration--intro-arrow {
+    display: none;
+  }
+
+  .p-section-hero__decoration--rays-top {
+    left: 0;
+    width: 115px;
+  }
+
+  .p-section-hero__decoration--crown {
+    width: 140px;
+  }
+
+  .p-section-hero__decoration--smile {
+    right: 0;
+    width: 145px;
+  }
+
+  .p-section-hero__decoration--rays-bottom {
+    left: -10px;
+    width: 125px;
+  }
+}
+@media (max-width: 900px) {
+  .p-section-hero__decoration,
+  .p-section-hero__social-guide {
+    display: none;
+  }
+}
