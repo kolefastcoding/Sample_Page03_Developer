@@ -26,15 +26,15 @@ if (themeToggle) {
   });
 }
 
+
 // Testimonial Swiper
+
 const testimonialSwiper = new Swiper(".p-section-testimonial__slider", {
   slidesPerView: 1,
   spaceBetween: 0,
 
   loop: true,
-
   speed: 800,
-
   grabCursor: true,
 
   autoplay: {
@@ -48,3 +48,4 @@ const testimonialSwiper = new Swiper(".p-section-testimonial__slider", {
     dynamicBullets: true,
   },
 });
+

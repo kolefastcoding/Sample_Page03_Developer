@@ -17,17 +17,19 @@
 <body>
   <div class="container">
     <header class="l-header">
-      <div class="wrapper l-header__wrapper">
+      <div class="wrapper">
         <a class="l-header__logo" href="./index.html" aria-label="Kalervo Portfolio home">
-          <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="KP Logo">
+          <img class="l-header__logo-decoration" src="./assets/images/decor-logo-rays.png" alt="decor-logo-rays"
+            width="552" height="375" loading="eager">
+
+          <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="KP Logo" width="40" height="40"
+            loading="eager">
         </a>
 
         <nav class="l-header__nav" aria-label="Main navigation">
           <ul class="l-header__nav-list">
             <li class="l-header__nav-item">
-              <a class="l-header__nav-link" href="#home">
-                Home
-              </a>
+              <a class="l-header__nav-link" href="#home"> Home </a>
             </li>
 
             <li class="l-header__nav-item">
@@ -54,38 +56,20 @@
 
     <main class="l-main">
       <section class="p-section-hero" id="home">
-        <div class="wrapper p-section-hero__wrapper">
-          <!-- Decorative: top-left rays -->
-          <img class="
-        p-section-hero__decoration
-        p-section-hero__decoration--rays-top
-      " src="./assets/images/decor-rays.png" alt="" width="980" height="1106" aria-hidden="true" draggable="false"
-            decoding="async" fetchpriority="low">
+        <div class="wrapper">
+          <img class="p-section-hero__decoration p-section-hero__decoration--crown"
+            src="./assets/images/decor-crown.png" alt="decor-crown" width="555" height="422" loading="eager">
 
-          <!-- Decorative: crown above portrait -->
-          <img class="
-        p-section-hero__decoration
-        p-section-hero__decoration--crown
-      " src="./assets/images/decor-crown.png" alt="" width="555" height="422" aria-hidden="true" draggable="false"
-            decoding="async" fetchpriority="low">
+          <img class="p-section-hero__decoration p-section-hero__decoration--smile"
+            src="./assets/images/decor-smile.png" alt="decor-smile" width="811" height="811" loading="eager">
 
-          <!-- Decorative: smile -->
-          <img class="
-        p-section-hero__decoration
-        p-section-hero__decoration--smile
-      " src="./assets/images/decor-smile.png" alt="" width="811" height="811" aria-hidden="true" draggable="false"
-            decoding="async" fetchpriority="low">
-
-          <!-- Decorative: bottom-left rays -->
-          <img class="
-        p-section-hero__decoration
-        p-section-hero__decoration--rays-bottom
-      " src="./assets/images/decor-rays.png" alt="" width="980" height="1106" aria-hidden="true" draggable="false"
-            decoding="async" fetchpriority="low">
+          <img class="p-section-hero__decoration p-section-hero__decoration--bottom-rays"
+            src="./assets/images/decor-bottom-rays.png" alt="decor-bottom-rays" width="980" height="1106"
+            loading="eager">
 
           <div class="p-section-hero__banner">
             <img class="p-section-hero__image" src="./assets/images/Banner.png" alt="Kalervo portrait" width="560"
-              height="470" loading="eager" fetchpriority="high">
+              height="470" loading="eager">
           </div>
 
           <div class="p-section-hero__content">
@@ -99,49 +83,52 @@
               user without casting any money.
             </p>
 
-            <ul class="c-social" aria-label="Social media links">
-              <li class="c-social__item">
-                <a class="c-social__link" href="#" aria-label="LinkedIn">
-                  <img class="c-social__icon" src="./assets/icons/icon-linkedin.svg" alt="" width="14" height="14">
-                </a>
-              </li>
+            <div class="p-section-hero__social">
+              <ul class="c-social" aria-label="Social media links">
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="LinkedIn">
+                    <img class="c-social__icon" src="./assets/icons/icon-linkedin.svg" alt="LinkedIn" width="14"
+                      height="14" loading="eager">
+                  </a>
+                </li>
 
-              <li class="c-social__item">
-                <a class="c-social__link" href="#" aria-label="Twitter">
-                  <img class="c-social__icon" src="./assets/icons/icon-twitter.svg" alt="" width="14" height="14">
-                </a>
-              </li>
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="Twitter">
+                    <img class="c-social__icon" src="./assets/icons/icon-twitter.svg" alt="Twitter" width="14"
+                      height="14" loading="eager">
+                  </a>
+                </li>
 
-              <li class="c-social__item">
-                <a class="c-social__link" href="#" aria-label="WhatsApp">
-                  <img class="c-social__icon" src="./assets/icons/icon-whatsapp.svg" alt="" width="14" height="14">
-                </a>
-              </li>
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="WhatsApp">
+                    <img class="c-social__icon" src="./assets/icons/icon-whatsapp.svg" alt="WhatsApp" width="14"
+                      height="14" loading="eager">
+                  </a>
+                </li>
 
-              <li class="c-social__item">
-                <a class="c-social__link" href="#" aria-label="Medium">
-                  <img class="c-social__icon" src="./assets/icons/icon-medium.svg" alt="" width="14" height="14">
-                </a>
-              </li>
-            </ul>
-
-            <div class="p-section-hero__social-guide" aria-hidden="true">
-              <img class="p-section-hero__social-guide-arrow" src="./assets/images/decor-arrow-social.png" alt=""
-                width="235" height="235" draggable="false">
-
-              <span class="p-section-hero__social-guide-text">
-                Follow me<br>
-                on social
-              </span>
+                <li class="c-social__item">
+                  <a class="c-social__link" href="#" aria-label="Medium">
+                    <img class="c-social__icon" src="./assets/icons/icon-medium.svg" alt="Medium" width="14" height="14"
+                      loading="eager">
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
 
+          <div class="p-section-hero__social-guide">
+            <img class="p-section-hero__social-guide-arrow" src="./assets/images/decor-social-arrow.png"
+              alt="decor-social-arrow" width="235" height="235" loading="eager">
+
+            <span class="p-section-hero__social-guide-text">
+              Follow me<br>
+              on social
+            </span>
+          </div>
+
           <div class="p-section-hero__intro">
-            <img class="
-          p-section-hero__decoration
-          p-section-hero__decoration--intro-arrow
-        " src="./assets/images/decor-arrow-intro.png" alt="" width="152" height="152" aria-hidden="true"
-              draggable="false" decoding="async" fetchpriority="low">
+            <img class="p-section-hero__intro-arrow" src="./assets/images/decor-intro-arrow.png" alt="decor-intro-arrow"
+              width="152" height="152" loading="eager">
 
             <p class="p-section-hero__label">
               Formal Introduction
@@ -159,9 +146,12 @@
             </p>
 
             <a class="c-button c-button--primary" href="#about">
-              <span class="c-button__text">Read About Me</span>
+              <span class="c-button__text">
+                Read About Me
+              </span>
 
-              <img class="c-button__icon" src="./assets/icons/ArrowRight.svg" alt="">
+              <img class="c-button__icon" src="./assets/icons/ArrowRight.svg" alt="arrow-right" width="16" height="16"
+                loading="eager">
             </a>
           </div>
 
@@ -201,23 +191,28 @@
 
               <ul class="p-section-hero__brand-list" aria-label="Founder brand list">
                 <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-01.png" alt="Brand logo 1">
+                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-01.png" alt="brand-logo-1"
+                    width="42" height="42" loading="eager">
                 </li>
 
                 <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-02.png" alt="Brand logo 2">
+                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-02.png" alt="brand-logo-2"
+                    width="42" height="42" loading="eager">
                 </li>
 
                 <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-03.png" alt="Brand logo 3">
+                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-03.png" alt="brand-logo-3"
+                    width="42" height="42" loading="eager">
                 </li>
 
                 <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-04.png" alt="Brand logo 4">
+                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-04.png" alt="brand-logo-4"
+                    width="42" height="42" loading="eager">
                 </li>
 
                 <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-05.png" alt="Brand logo 5">
+                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-05.png" alt="brand-logo-5"
+                    width="42" height="42" loading="eager">
                 </li>
               </ul>
             </div>
@@ -230,7 +225,15 @@
       </button>
 
       <section class="p-section-testimonial">
-        <div class="wrapper p-section-testimonial__wrapper">
+        <div class="wrapper">
+          <img class="p-section-testimonial__decoration p-section-testimonial__decoration--arrow"
+            src="./assets/images/decor-testimonial-arrow.png" alt="decor-testimonial-arrow" width="248" height="248"
+            loading="lazy">
+
+          <img class="p-section-testimonial__decoration p-section-testimonial__decoration--done"
+            src="./assets/images/decor-testimonial-done.png" alt="decor-testimonial-done" width="180" height="180"
+            loading="lazy">
+
           <div class="p-section-testimonial__heading">
             <p class="p-section-testimonial__label">Customer Testimonial</p>
 
@@ -238,17 +241,14 @@
               Consumer thought about my product!
             </h2>
 
-            <div class="p-section-testimonial__words" aria-hidden="true">
-              <span class="p-section-testimonial__word">Wow!</span>
-              <span class="p-section-testimonial__word">Nice!</span>
-              <span class="p-section-testimonial__word">Love</span>
+            <div class="p-section-testimonial__words">
+              <img class="p-section-testimonial__words-image" src="./assets/images/decor-testimonial-words.png"
+                alt="decor-testimonial-words" width="672" height="192" loading="lazy">
             </div>
           </div>
-          <!-- <div class="box-shadow_slider"></div> -->
-          <!-- Swiper -->
+
           <div class="swiper p-section-testimonial__slider">
             <div class="swiper-wrapper">
-              <!-- Slide 1 -->
               <div class="swiper-slide">
                 <article class="p-section-testimonial__card">
                   <p class="p-section-testimonial__text">
@@ -260,7 +260,7 @@
 
                   <div class="p-section-testimonial__author">
                     <img class="p-section-testimonial__author-avatar" src="./assets/images/testimonial-avatar.png"
-                      alt="Kalvin Gilbert">
+                      alt="Kalvin Gilbert" width="48" height="48" loading="lazy">
 
                     <div class="p-section-testimonial__author-info">
                       <h3 class="p-section-testimonial__author-name">
@@ -275,7 +275,6 @@
                 </article>
               </div>
 
-              <!-- Slide 2 -->
               <div class="swiper-slide">
                 <article class="p-section-testimonial__card">
                   <p class="p-section-testimonial__text">
@@ -286,7 +285,7 @@
 
                   <div class="p-section-testimonial__author">
                     <img class="p-section-testimonial__author-avatar" src="./assets/images/testimonial-avatar.png"
-                      alt="John Smith">
+                      alt="John Smith" width="48" height="48" loading="lazy">
 
                     <div class="p-section-testimonial__author-info">
                       <h3 class="p-section-testimonial__author-name">
@@ -301,7 +300,6 @@
                 </article>
               </div>
 
-              <!-- Slide 3 -->
               <div class="swiper-slide">
                 <article class="p-section-testimonial__card">
                   <p class="p-section-testimonial__text">
@@ -311,7 +309,7 @@
 
                   <div class="p-section-testimonial__author">
                     <img class="p-section-testimonial__author-avatar" src="./assets/images/testimonial-avatar.png"
-                      alt="Emily Watson">
+                      alt="Emily Watson" width="48" height="48" loading="lazy">
 
                     <div class="p-section-testimonial__author-info">
                       <h3 class="p-section-testimonial__author-name">
@@ -327,20 +325,28 @@
               </div>
             </div>
 
-            <!-- Swiper Pagination -->
-            <div class="p-section-testimonial__pagination"></div>
+            <div class="swiper-pagination p-section-testimonial__pagination"></div>
           </div>
         </div>
       </section>
 
-      <section class="p-section-about">
-        <div class="wrapper p-section-about__wrapper">
+      <section class="p-section-about" id="about">
+        <div class="wrapper">
+          <img class="p-section-about__decoration p-section-about__decoration--arrow"
+            src="./assets/images/decor-about-arrow.png" alt="decor-about-arrow" width="386" height="486" loading="lazy">
+
+          <img class="p-section-about__decoration p-section-about__decoration--smile"
+            src="./assets/images/decor-about-smile.png" alt="decor-about-smile" width="575" height="575" loading="lazy">
+
           <div class="p-section-about__visual">
-            <img class="p-section-about__image" src="./assets/images/about-chart.png" alt="Social followers chart"
-              loading="lazy">
+            <img class="p-section-about__image" src="./assets/images/about-chart.png" alt="social-followers-chart"
+              width="460" height="460" loading="lazy">
           </div>
 
           <div class="p-section-about__content">
+            <img class="p-section-about__decoration p-section-about__decoration--rays"
+              src="./assets/images/decor-about-rays.png" alt="decor-about-rays" width="654" height="654" loading="lazy">
+
             <p class="p-section-about__label">Read About Me</p>
 
             <h2 class="p-section-about__title">
@@ -361,7 +367,15 @@
       </section>
 
       <section class="p-section-team">
-        <div class="wrapper p-section-team__wrapper">
+        <div class="wrapper">
+          <img class="p-section-team__decoration p-section-team__decoration--left"
+            src="./assets/images/decor-team-circle-left.png" alt="decor-team-circle-left" width="605" height="624"
+            loading="lazy">
+
+          <img class="p-section-team__decoration p-section-team__decoration--right"
+            src="./assets/images/decor-team-circle-right.png" alt="decor-team-circle-right" width="708" height="1039"
+            loading="lazy">
+
           <div class="p-section-team__heading">
             <p class="p-section-team__label">Team Members</p>
 
@@ -371,47 +385,52 @@
           </div>
 
           <button class="p-section-team__nav p-section-team__nav--prev" type="button" aria-label="Previous team member">
-            <img class="p-section-team__nav-icon" src="./assets/icons/CaretLeft.svg" alt="">
+            <img class="p-section-team__nav-icon" src="./assets/icons/CaretLeft.svg" alt="caret-left" width="16"
+              height="16" loading="lazy">
           </button>
 
           <ul class="p-section-team__list" aria-label="Team member list">
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-01.png" alt="Cameron Williamson"
-                  loading="lazy">
+                  width="260" height="190" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
+
               <p class="p-section-team__position">Assistant Manager</p>
             </li>
 
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-02.png" alt="Cameron Williamson"
-                  loading="lazy">
+                  width="260" height="190" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
+
               <p class="p-section-team__position">Supporting Assistant</p>
             </li>
 
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-03.png" alt="Cameron Williamson"
-                  loading="lazy">
+                  width="260" height="190" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
+
               <p class="p-section-team__position">Product Manager</p>
             </li>
 
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-04.png" alt="Cameron Williamson"
-                  loading="lazy">
+                  width="260" height="190" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
+
               <p class="p-section-team__position">
                 Head of Sales &amp; Services
               </p>
@@ -419,7 +438,8 @@
           </ul>
 
           <button class="p-section-team__nav p-section-team__nav--next" type="button" aria-label="Next team member">
-            <img class="p-section-team__nav-icon" src="./assets/icons/CaretRight.svg" alt="">
+            <img class="p-section-team__nav-icon" src="./assets/icons/CaretRight.svg" alt="caret-right" width="16"
+              height="16" loading="lazy">
           </button>
 
           <div class="p-section-team__progress" aria-hidden="true">
@@ -429,20 +449,18 @@
       </section>
 
       <section class="p-section-blog">
-        <div class="wrapper p-section-blog__wrapper">
+        <div class="wrapper">
           <div class="p-section-blog__heading">
             <p class="p-section-blog__label">Blogs</p>
 
-            <h2 class="p-section-blog__title">
-              Latest article
-            </h2>
+            <h2 class="p-section-blog__title">Latest article</h2>
           </div>
 
           <div class="p-section-blog__layout">
             <ul class="p-section-blog__list" aria-label="Latest blog list">
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-01.png"
-                  alt="Colorful abstract blog thumbnail" loading="lazy">
+                  alt="Colorful abstract blog thumbnail" width="150" height="95" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -466,7 +484,7 @@
 
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-02.png" alt="Shoe blog thumbnail"
-                  loading="lazy">
+                  width="150" height="95" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -490,7 +508,7 @@
 
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-03.png" alt="Robot blog thumbnail"
-                  loading="lazy">
+                  width="150" height="95" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -516,7 +534,7 @@
 
             <div class="p-section-blog__featured">
               <img class="p-section-blog__featured-image" src="./assets/images/blog-featured.png"
-                alt="Developers working together" loading="lazy">
+                alt="Developers working together" width="600" height="280" loading="lazy">
 
               <div class="p-section-blog__featured-content">
                 <p class="p-section-blog__meta">
@@ -539,7 +557,8 @@
 
                 <a class="c-read-more" href="#">
                   <span class="c-read-more__text">Read More</span>
-                  <img class="c-read-more__icon" src="./assets/icons/icon-arrow-right.svg" alt="">
+                  <img class="c-read-more__icon" src="./assets/icons/icon-arrow-right.svg" alt="arrow-right" width="16"
+                    height="16" loading="lazy">
                 </a>
               </div>
             </div>
@@ -548,11 +567,11 @@
       </section>
 
       <section class="p-section-contact">
-        <div class="wrapper p-section-contact__wrapper">
+        <div class="wrapper">
           <div class="p-section-contact__card">
             <div class="p-section-contact__media">
               <img class="p-section-contact__image" src="./assets/images/contact-person.png" alt="Kalervo portrait"
-                loading="lazy">
+                width="300" height="330" loading="lazy">
             </div>
 
             <div class="p-section-contact__content">
@@ -571,7 +590,8 @@
                 <label class="u-sr-only" for="email">Email address</label>
 
                 <div class="p-section-contact__input-wrap">
-                  <img class="p-section-contact__input-icon" src="./assets/icons/icon-email.svg" alt="">
+                  <img class="p-section-contact__input-icon" src="./assets/icons/icon-email.svg" alt="email" width="16"
+                    height="16" loading="lazy">
 
                   <input class="p-section-contact__input" id="email" name="email" type="email"
                     placeholder="Email Address">
@@ -590,37 +610,43 @@
                 <ul class="c-social" aria-label="Contact social links">
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="LinkedIn">
-                      <img class="c-social__icon" src="./assets/icons/icon-linkedin.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-linkedin.svg" alt="LinkedIn" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
 
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="Twitter">
-                      <img class="c-social__icon" src="./assets/icons/icon-twitter.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-twitter.svg" alt="Twitter" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
 
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="Instagram">
-                      <img class="c-social__icon" src="./assets/icons/icon-instagram.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-instagram.svg" alt="Instagram" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
 
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="Facebook">
-                      <img class="c-social__icon" src="./assets/icons/icon-facebook.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-facebook.svg" alt="Facebook" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
 
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="WhatsApp">
-                      <img class="c-social__icon" src="./assets/icons/icon-whatsapp.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-whatsapp.svg" alt="WhatsApp" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
 
                   <li class="c-social__item">
                     <a class="c-social__link" href="#" aria-label="Medium">
-                      <img class="c-social__icon" src="./assets/icons/icon-medium.svg" alt="">
+                      <img class="c-social__icon" src="./assets/icons/icon-medium.svg" alt="Medium" width="14"
+                        height="14" loading="lazy">
                     </a>
                   </li>
                 </ul>
@@ -632,7 +658,7 @@
     </main>
 
     <footer class="l-footer">
-      <div class="wrapper l-footer__wrapper">
+      <div class="wrapper">
         <p class="l-footer__copyright">
           © 2022 Kalervo Pohjamo from Finland.
         </p>
