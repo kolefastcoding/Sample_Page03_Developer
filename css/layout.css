@@ -117,7 +117,7 @@
 }
 
 .p-section-hero__decoration--crown {
-  top: -8px;
+  /* top: -8px; */
   left: 55%;
   width: 180px;
   transform: translateX(-50%) rotate(-4deg);
@@ -747,8 +747,62 @@
 
 
 .p-section-blog {
+  position: relative;
   padding-top: 120px;
+  overflow: hidden;
 }
+
+.p-section-blog .wrapper {
+  position: relative;
+  isolation: isolate;
+}
+
+.p-section-blog__decoration {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.p-section-blog__decoration--scribble-top {
+  top: -105px;
+  right: 100px;
+  width: 185px;
+  transform: rotate(4deg);
+}
+
+.p-section-blog__decoration--scribble-left {
+  top: -55px;
+  left: -75px;
+  width: 135px;
+  transform: rotate(-8deg);
+}
+
+.p-section-blog__decoration--stars {
+  bottom: -30px;
+  left: -90px;
+  width: 150px;
+  transform: rotate(-8deg);
+}
+
+.p-section-blog__decoration--arrow {
+  right: -105px;
+  bottom: -145px;
+  width: 180px;
+  transform: rotate(3deg);
+}
+
+.p-section-blog__heading,
+.p-section-blog__layout {
+  position: relative;
+  z-index: 2;
+}
+
 
 .p-section-blog__heading {
   margin-bottom: 56px;
@@ -836,8 +890,47 @@
 
 
 .p-section-contact {
+  position: relative;
   padding-top: 110px;
   padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.p-section-contact .wrapper {
+  position: relative;
+}
+
+.p-section-contact__decoration {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.p-section-contact__decoration--hearts {
+  left: 75px;
+  bottom: 18px;
+  width: 100px;
+  transform: rotate(-6deg);
+}
+
+.p-section-contact__decoration--rays-top {
+  top: -90px;
+  left: 50%;
+  width: 128px;
+  transform: translateX(-50%);
+}
+
+.p-section-contact__decoration--rays-bottom {
+  right: 100px;
+  bottom: 8px;
+  width: 100px;
+  transform: rotate(10deg);
 }
 
 .p-section-contact__card {
@@ -847,11 +940,12 @@
   gap: 48px;
   margin-inline: auto;
   padding: 48px;
+  background-color: var(--color-white);
   box-shadow: var(--shadow-md);
 }
 
 .p-section-contact__media {
-  background-color: #e7f0e9;
+  /* background-color: #e7f0e9; */
 }
 
 .p-section-contact__image {
@@ -859,6 +953,11 @@
   height: 100%;
   min-height: 330px;
   object-fit: cover;
+}
+
+.p-section-contact__content {
+  position: relative;
+  z-index: 2;
 }
 
 .p-section-contact__title {

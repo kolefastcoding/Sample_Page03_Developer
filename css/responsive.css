@@ -16,7 +16,7 @@
   }
 
   .p-section-hero__decoration--crown {
-    top: 12px;
+    top: 235px;
     left: 53%;
     width: 155px;
   }
@@ -126,9 +126,43 @@
     width: 235px;
   }
 
+  .p-section-contact__decoration--hearts {
+    left: -20px;
+    width: 86px;
+  }
+
+  .p-section-contact__decoration--rays-top {
+    top: -45px;
+    width: 116px;
+  }
+
+  .p-section-contact__decoration--rays-bottom {
+    right: 0;
+    width: 72px;
+  }
 
   .p-section-contact__card {
     grid-template-columns: 280px 1fr;
+  }
+
+  .p-section-blog__decoration--scribble-top {
+    right: 65px;
+    width: 150px;
+  }
+
+  .p-section-blog__decoration--scribble-left {
+    left: -40px;
+    width: 95px;
+  }
+
+  .p-section-blog__decoration--stars {
+    left: -45px;
+    width: 135px;
+  }
+
+  .p-section-blog__decoration--arrow {
+    right: -65px;
+    width: 165px;
   }
 }
 
@@ -241,6 +275,22 @@
     right: -65px;
     width: 210px;
   }
+  .p-section-contact__decoration--hearts {
+  left: -10px;
+  bottom: 20px;
+  width: 80px;
+}
+
+.p-section-contact__decoration--rays-top {
+  top: -35px;
+  width: 106px;
+}
+
+.p-section-contact__decoration--rays-bottom {
+  right: 5px;
+  bottom: 15px;
+  width: 66px;
+}
 }
 
 @media (max-width: 900px) {
@@ -433,8 +483,44 @@
   .p-section-blog__featured-image {
     height: 320px;
   }
+  .p-section-blog__decoration--scribble-top {
+  top: -85px;
+  right: 30px;
+  width: 130px;
+}
 
+.p-section-blog__decoration--scribble-left {
+  left: -25px;
+  width: 85px;
+}
 
+.p-section-blog__decoration--stars {
+  bottom: -15px;
+  left: -30px;
+  width: 115px;
+}
+
+.p-section-blog__decoration--arrow {
+  right: -45px;
+  bottom: -110px;
+  width: 145px;
+}
+.p-section-contact__decoration--hearts {
+  left: 5px;
+  bottom: 24px;
+  width: 74px;
+}
+
+.p-section-contact__decoration--rays-top {
+  top: -28px;
+  width: 92px;
+}
+
+.p-section-contact__decoration--rays-bottom {
+  right: 8px;
+  bottom: 20px;
+  width: 60px;
+}
   .p-section-contact__card {
     grid-template-columns: 1fr;
     padding: 36px;
@@ -555,7 +641,19 @@
     height: 90px;
   }
 
+.p-section-contact__decoration--hearts {
+  left: 8px;
+  width: 68px;
+}
 
+.p-section-contact__decoration--rays-top {
+  width: 82px;
+}
+
+.p-section-contact__decoration--rays-bottom {
+  right: 10px;
+  width: 54px;
+}
   .p-section-contact__form {
     grid-template-columns: 1fr;
   }
