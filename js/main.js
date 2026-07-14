@@ -25,7 +25,58 @@ if (themeToggle) {
     }
   });
 }
+// open menu mobile
+const header = document.querySelector(".l-header");
 
+if (header) {
+  const menuButton = header.querySelector(".js-menu-toggle");
+  const primaryNavigation = header.querySelector("#primary-navigation");
+  const navigationLinks = header.querySelectorAll(".l-header__nav-link");
+  const MOBILE_BREAKPOINT = 768;
+
+  if (menuButton && primaryNavigation) {
+    const setMenuState = (isOpen) => {
+      header.classList.toggle("is-menu-open", isOpen);
+
+      menuButton.setAttribute(
+        "aria-expanded",
+        String(isOpen),
+      );
+
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen
+          ? "Close navigation menu"
+          : "Open navigation menu",
+      );
+    };
+
+    menuButton.addEventListener("click", () => {
+      const isOpen =
+        menuButton.getAttribute("aria-expanded") === "true";
+
+      setMenuState(!isOpen);
+    });
+
+    navigationLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        setMenuState(false);
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setMenuState(false);
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > MOBILE_BREAKPOINT) {
+        setMenuState(false);
+      }
+    });
+  }
+}
 
 // Testimonial Swiper
 

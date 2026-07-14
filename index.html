@@ -26,7 +26,7 @@
             loading="eager">
         </a>
 
-        <nav class="l-header__nav" aria-label="Main navigation">
+        <nav class="l-header__nav" id="primary-navigation" aria-label="Main navigation">
           <ul class="l-header__nav-list">
             <li class="l-header__nav-item">
               <a class="l-header__nav-link" href="#home"> Home </a>
@@ -46,10 +46,13 @@
           </ul>
         </nav>
 
-        <button class="l-header__toggle" type="button" aria-label="Open navigation">
-          <span class="l-header__toggle-line"></span>
-          <span class="l-header__toggle-line"></span>
-          <span class="l-header__toggle-line"></span>
+        <button class="l-header__menu-button js-menu-toggle" type="button" aria-label="Open navigation menu"
+          aria-expanded="false" aria-controls="primary-navigation">
+          <img class="l-header__menu-icon l-header__menu-icon--open" src="./assets/icons/icon-menu.svg" alt="icon-menu"
+            width="24" height="24" loading="eager">
+
+          <img class="l-header__menu-icon l-header__menu-icon--close" src="./assets/icons/icon-close.svg"
+            alt="icon-close" width="24" height="24" loading="eager">
         </button>
       </div>
     </header>
@@ -393,7 +396,7 @@
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-01.png" alt="Cameron Williamson"
-                  width="260" height="190" loading="lazy">
+                  width="280" height="280" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
@@ -404,7 +407,7 @@
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-02.png" alt="Cameron Williamson"
-                  width="260" height="190" loading="lazy">
+                  width="280" height="280" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
@@ -415,7 +418,7 @@
             <li class="p-section-team__item">
               <div class="p-section-team__image-wrap">
                 <img class="p-section-team__image" src="./assets/images/member-03.png" alt="Cameron Williamson"
-                  width="260" height="190" loading="lazy">
+                  width="280" height="280" loading="lazy">
               </div>
 
               <h3 class="p-section-team__name">Cameron Williamson</h3>
@@ -473,7 +476,7 @@
             <ul class="p-section-blog__list" aria-label="Latest blog list">
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-01.png"
-                  alt="Colorful abstract blog thumbnail" width="150" height="95" loading="lazy">
+                  alt="Colorful abstract blog thumbnail" width="188" height="132" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -497,7 +500,7 @@
 
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-02.png" alt="Shoe blog thumbnail"
-                  width="150" height="95" loading="lazy">
+                  width="188" height="132" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -521,7 +524,7 @@
 
               <li class="p-section-blog__item">
                 <img class="p-section-blog__thumb" src="./assets/images/blog-03.png" alt="Robot blog thumbnail"
-                  width="150" height="95" loading="lazy">
+                  width="188" height="132" loading="lazy">
 
                 <div class="p-section-blog__content">
                   <p class="p-section-blog__meta">
@@ -547,7 +550,7 @@
 
             <div class="p-section-blog__featured">
               <img class="p-section-blog__featured-image" src="./assets/images/blog-featured.png"
-                alt="Developers working together" width="600" height="280" loading="lazy">
+                alt="Developers working together" width="640" height="316" loading="lazy">
 
               <div class="p-section-blog__featured-content">
                 <p class="p-section-blog__meta">
@@ -596,7 +599,7 @@
           <div class="p-section-contact__card">
             <div class="p-section-contact__media">
               <img class="p-section-contact__image" src="./assets/images/contact-person.png" alt="Kalervo portrait"
-                width="300" height="330" loading="lazy">
+                width="376" height="536" loading="lazy">
             </div>
 
             <div class="p-section-contact__content">
