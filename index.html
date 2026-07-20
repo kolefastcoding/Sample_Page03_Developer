@@ -1,59 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Kalervo Portfolio - Page 03</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/variables.css">
-  <link rel="stylesheet" href="./css/base.css">
-  <link rel="stylesheet" href="./css/components.css">
-  <link rel="stylesheet" href="./css/layout.css">
-  <link rel="stylesheet" href="./css/responsive.css">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/variables.css" rel="stylesheet">
+  <link href="./css/base.css" rel="stylesheet">
+  <link href="./css/components.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+  <link href="./css/top.css" rel="stylesheet">
+  <link href="./css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <header class="l-header">
       <div class="wrapper">
-        <a class="l-header__logo" href="./index.html" aria-label="Kalervo Portfolio home">
+        <a aria-label="Kalervo Portfolio home" class="l-header__logo" href="./index.html">
           <img class="l-header__logo-decoration" src="./assets/images/decor-logo-rays.png" alt="decor-logo-rays"
             width="552" height="375" loading="eager">
-
-          <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="KP Logo" width="40" height="40"
+          <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="kp-logo" width="40" height="40"
             loading="eager">
         </a>
 
-        <nav class="l-header__nav" id="primary-navigation" aria-label="Main navigation">
+        <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu"
+          class="l-header__menu-button js-menu-toggle" type="button">
+          <span class="l-header__menu-icon l-header__menu-icon--open">
+            <img alt="icon-menu" height="24" loading="eager" src="./assets/icons/icon-menu.svg" width="24">
+          </span>
+          <span class="l-header__menu-icon l-header__menu-icon--close">
+            <img alt="icon-close" height="24" loading="eager" src="./assets/icons/icon-close.svg" width="24">
+          </span>
+        </button>
+
+        <nav class="l-header__nav" id="primary-navigation">
           <ul class="l-header__nav-list">
             <li class="l-header__nav-item">
-              <a class="l-header__nav-link" href="#home"> Home </a>
+              <a class="l-header__nav-link" href="#home">
+                Home
+              </a>
             </li>
-
             <li class="l-header__nav-item">
-              <a class="l-header__nav-link" href="#about">About</a>
+              <a class="l-header__nav-link" href="#about">
+                About
+              </a>
             </li>
-
             <li class="l-header__nav-item">
-              <a class="l-header__nav-link" href="#events">Events</a>
+              <a class="l-header__nav-link" href="#events">
+                Events
+              </a>
             </li>
-
             <li class="l-header__nav-item">
-              <a class="l-header__nav-link" href="#contact">Contact</a>
+              <a class="l-header__nav-link" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
-
-        <button class="l-header__menu-button js-menu-toggle" type="button" aria-label="Open navigation menu"
-          aria-expanded="false" aria-controls="primary-navigation">
-          <img class="l-header__menu-icon l-header__menu-icon--open" src="./assets/icons/icon-menu.svg" alt="icon-menu"
-            width="24" height="24" loading="eager">
-
-          <img class="l-header__menu-icon l-header__menu-icon--close" src="./assets/icons/icon-close.svg"
-            alt="icon-close" width="24" height="24" loading="eager">
-        </button>
       </div>
     </header>
 
@@ -69,163 +75,170 @@
           <img class="p-section-hero__decoration p-section-hero__decoration--bottom-rays"
             src="./assets/images/decor-bottom-rays.png" alt="decor-bottom-rays" width="980" height="1106"
             loading="eager">
+          <img class="p-section-hero__decoration p-section-hero__intro-arrow"
+            src="./assets/images/decor-intro-arrow.png" alt="decor-intro-arrow" width="152" height="152"
+            loading="eager">
+          <div class="p-section-hero__row">
+            <div class="p-section-hero__banner">
+              <img class="p-section-hero__image" src="./assets/images/Banner.png" alt="Kalervo portrait" width="560"
+                height="470" loading="eager">
+            </div>
+            <div class="p-section-hero__content">
+              <h1 class="p-section-hero__title">
+                It’s Kalervo <br>
+                From Finland.
+              </h1>
 
-          <div class="p-section-hero__banner">
-            <img class="p-section-hero__image" src="./assets/images/Banner.png" alt="Kalervo portrait" width="560"
-              height="470" loading="eager">
-          </div>
+              <p class="p-section-hero__description">
+                A man who only focus to build quality-full product that can help
+                user without casting any money.
+              </p>
 
-          <div class="p-section-hero__content">
-            <h1 class="p-section-hero__title">
-              It’s Kalervo <br>
-              From Finland.
-            </h1>
+              <div class="p-section-hero__social">
+                <ul class="p-section-hero__list">
+                  <li class="p-section-hero__item">
+                    <a class="p-section-hero__link" href="#" aria-label="LinkedIn">
+                      <img class="p-section-hero__icon" src="./assets/icons/icon-linkedin.svg" alt="LinkedIn" width="16"
+                        height="16" loading="eager">
+                    </a>
+                  </li>
 
-            <p class="p-section-hero__description">
-              A man who only focus to build quality-full product that can help
-              user without casting any money.
-            </p>
+                  <li class="p-section-hero__item">
+                    <a class="p-section-hero__link" href="#" aria-label="Twitter">
+                      <img class="p-section-hero__icon" src="./assets/icons/icon-twitter.svg" alt="Twitter" width="16"
+                        height="16" loading="eager">
+                    </a>
+                  </li>
 
-            <div class="p-section-hero__social">
-              <ul class="c-social" aria-label="Social media links">
-                <li class="c-social__item">
-                  <a class="c-social__link" href="#" aria-label="LinkedIn">
-                    <img class="c-social__icon" src="./assets/icons/icon-linkedin.svg" alt="LinkedIn" width="14"
-                      height="14" loading="eager">
-                  </a>
-                </li>
+                  <li class="p-section-hero__item">
+                    <a class="p-section-hero__link" href="#" aria-label="WhatsApp">
+                      <img class="p-section-hero__icon" src="./assets/icons/icon-whatsapp.svg" alt="WhatsApp" width="16"
+                        height="16" loading="eager">
+                    </a>
+                  </li>
 
-                <li class="c-social__item">
-                  <a class="c-social__link" href="#" aria-label="Twitter">
-                    <img class="c-social__icon" src="./assets/icons/icon-twitter.svg" alt="Twitter" width="14"
-                      height="14" loading="eager">
-                  </a>
-                </li>
+                  <li class="p-section-hero__item">
+                    <a class="p-section-hero__link" href="#" aria-label="Medium">
+                      <img class="p-section-hero__icon" src="./assets/icons/icon-medium.svg" alt="Medium" width="16"
+                        height="16" loading="eager">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-section-hero__intro">
 
-                <li class="c-social__item">
-                  <a class="c-social__link" href="#" aria-label="WhatsApp">
-                    <img class="c-social__icon" src="./assets/icons/icon-whatsapp.svg" alt="WhatsApp" width="14"
-                      height="14" loading="eager">
-                  </a>
-                </li>
 
-                <li class="c-social__item">
-                  <a class="c-social__link" href="#" aria-label="Medium">
-                    <img class="c-social__icon" src="./assets/icons/icon-medium.svg" alt="Medium" width="14" height="14"
-                      loading="eager">
-                  </a>
-                </li>
-              </ul>
+              <p class="p-section-hero__label">
+                Formal Introduction
+              </p>
+
+              <h2 class="p-section-hero__intro-title">
+                Hello, I’m Kalervo Pohjamo, CEO &amp; Founder of Atlassian and
+                Trello
+              </h2>
+
+              <p class="p-section-hero__intro-description">
+                I’m founder &amp; chief executing officer at Atlassian Trello,
+                &amp; Confluence. In my life, I builded lot’s of quality-full
+                product that can help people.
+              </p>
+
+              <a class="c-button c-button--primary" href="#about">
+                <span class="c-button__text">
+                  Read About Me
+                </span>
+
+                <span class="c-button__icon">
+                  <img alt="icon-arrow-right" height="16" loading="eager" src="./assets/icons/ArrowRight.svg"
+                    width="16">
+                </span>
+              </a>
             </div>
           </div>
 
-          <div class="p-section-hero__social-guide">
-            <img class="p-section-hero__social-guide-arrow" src="./assets/images/decor-social-arrow.png"
-              alt="decor-social-arrow" width="235" height="235" loading="eager">
 
+          <img class="p-section-hero__decoration p-section-hero__social-guide-arrow"
+            src="./assets/images/decor-social-arrow.png" alt="decor-social-arrow" width="235" height="235"
+            loading="eager">
+          <div class="p-section-hero__social-guide">
             <span class="p-section-hero__social-guide-text">
               Follow me<br>
               on social
             </span>
           </div>
 
-          <div class="p-section-hero__intro">
-            <img class="p-section-hero__intro-arrow" src="./assets/images/decor-intro-arrow.png" alt="decor-intro-arrow"
-              width="152" height="152" loading="eager">
+          <div class="p-section-hero__stats">
+            <div class="p-section-hero__stats-wrapper">
+              <div class="p-section-hero__stats-card">
+                <div class="p-section-hero__stat-item">
+                  <strong class="p-section-hero__stat-number">
+                    19+
+                  </strong>
 
-            <p class="p-section-hero__label">
-              Formal Introduction
-            </p>
+                  <span class="p-section-hero__stat-text">
+                    Years of Experience
+                  </span>
+                </div>
 
-            <h2 class="p-section-hero__intro-title">
-              Hello, I’m Kalervo Pohjamo, CEO &amp; Founder of Atlassian and
-              Trello
-            </h2>
+                <div class="p-section-hero__stat-divider" aria-hidden="true"></div>
 
-            <p class="p-section-hero__intro-description">
-              I’m founder &amp; chief executing officer at Atlassian Trello,
-              &amp; Confluence. In my life, I builded lot’s of quality-full
-              product that can help people.
-            </p>
+                <div class="p-section-hero__stat-item">
+                  <strong class="p-section-hero__stat-number">
+                    750+
+                  </strong>
 
-            <a class="c-button c-button--primary" href="#about">
-              <span class="c-button__text">
-                Read About Me
-              </span>
-
-              <img class="c-button__icon" src="./assets/icons/ArrowRight.svg" alt="arrow-right" width="16" height="16"
-                loading="eager">
-            </a>
-          </div>
-
-          <div class="p-section-hero__stats" role="group" aria-label="Experience and founder brands">
-            <div class="p-section-hero__stats-card">
-              <div class="p-section-hero__stat-item">
-                <strong class="p-section-hero__stat-number">
-                  19+
-                </strong>
-
-                <span class="p-section-hero__stat-text">
-                  Years of Experience
-                </span>
+                  <span class="p-section-hero__stat-text">
+                    Colleague/Team Members
+                  </span>
+                </div>
               </div>
 
-              <div class="p-section-hero__stat-divider" aria-hidden="true"></div>
+              <div class="p-section-hero__founder-card">
+                <div class="p-section-hero__founder-head">
+                  <h2 class="p-section-hero__founder-title">
+                    I’m Founder of
+                  </h2>
 
-              <div class="p-section-hero__stat-item">
-                <strong class="p-section-hero__stat-number">
-                  750+
-                </strong>
+                  <span class="p-section-hero__founder-line" aria-hidden="true"></span>
+                </div>
 
-                <span class="p-section-hero__stat-text">
-                  Colleague/Team Members
-                </span>
+                <ul class="p-section-hero__brand-list" aria-label="Founder brand list">
+                  <li class="p-section-hero__brand-item">
+                    <img class="p-section-hero__brand-image" src="./assets/icons/brand-01.png" alt="brand-logo-1"
+                      width="42" height="42" loading="eager">
+                  </li>
+
+                  <li class="p-section-hero__brand-item">
+                    <img class="p-section-hero__brand-image" src="./assets/icons/brand-02.png" alt="brand-logo-2"
+                      width="42" height="42" loading="eager">
+                  </li>
+
+                  <li class="p-section-hero__brand-item">
+                    <img class="p-section-hero__brand-image" src="./assets/icons/brand-03.png" alt="brand-logo-3"
+                      width="42" height="42" loading="eager">
+                  </li>
+
+                  <li class="p-section-hero__brand-item">
+                    <img class="p-section-hero__brand-image" src="./assets/icons/brand-04.png" alt="brand-logo-4"
+                      width="42" height="42" loading="eager">
+                  </li>
+
+                  <li class="p-section-hero__brand-item">
+                    <img class="p-section-hero__brand-image" src="./assets/icons/brand-05.png" alt="brand-logo-5"
+                      width="42" height="42" loading="eager">
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <div class="p-section-hero__founder-card">
-              <div class="p-section-hero__founder-head">
-                <h2 class="p-section-hero__founder-title">
-                  I’m Founder of
-                </h2>
-
-                <span class="p-section-hero__founder-line" aria-hidden="true"></span>
-              </div>
-
-              <ul class="p-section-hero__brand-list" aria-label="Founder brand list">
-                <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-01.png" alt="brand-logo-1"
-                    width="42" height="42" loading="eager">
-                </li>
-
-                <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-02.png" alt="brand-logo-2"
-                    width="42" height="42" loading="eager">
-                </li>
-
-                <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-03.png" alt="brand-logo-3"
-                    width="42" height="42" loading="eager">
-                </li>
-
-                <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-04.png" alt="brand-logo-4"
-                    width="42" height="42" loading="eager">
-                </li>
-
-                <li class="p-section-hero__brand-item">
-                  <img class="p-section-hero__brand-image" src="./assets/icons/brand-05.png" alt="brand-logo-5"
-                    width="42" height="42" loading="eager">
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
 
-      <button class="c-theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+      <!-- <button class="c-theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
         <span class="c-theme-toggle__icon" aria-hidden="true">&#9728;</span>
-      </button>
+      </button> -->
 
       <section class="p-section-testimonial">
         <div class="wrapper">
@@ -388,8 +401,9 @@
           </div>
 
           <button class="p-section-team__nav p-section-team__nav--prev" type="button" aria-label="Previous team member">
-            <img class="p-section-team__nav-icon" src="./assets/icons/CaretLeft.svg" alt="caret-left" width="16"
-              height="16" loading="lazy">
+            <span class="p-section-team__nav-icon">
+              <img alt="caret-left" height="16" loading="lazy" src="./assets/icons/CaretLeft.svg" width="16">
+            </span>
           </button>
 
           <ul class="p-section-team__list" aria-label="Team member list">
@@ -441,8 +455,9 @@
           </ul>
 
           <button class="p-section-team__nav p-section-team__nav--next" type="button" aria-label="Next team member">
-            <img class="p-section-team__nav-icon" src="./assets/icons/CaretRight.svg" alt="caret-right" width="16"
-              height="16" loading="lazy">
+            <span class="p-section-team__nav-icon">
+              <img alt="caret-right" height="16" loading="lazy" src="./assets/icons/CaretRight.svg" width="16">
+            </span>
           </button>
 
           <div class="p-section-team__progress" aria-hidden="true">
@@ -573,8 +588,10 @@
 
                 <a class="c-read-more" href="#">
                   <span class="c-read-more__text">Read More</span>
-                  <img class="c-read-more__icon" src="./assets/icons/icon-arrow-right.svg" alt="arrow-right" width="16"
-                    height="16" loading="lazy">
+                  <span class="c-read-more__icon">
+                    <img alt="icon-arrow-right" height="16" loading="lazy" src="./assets/icons/icon-arrow-right.svg"
+                      width="16">
+                  </span>
                 </a>
               </div>
             </div>
@@ -694,8 +711,10 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js">
+  </script>
+  <script src="./js/main.js">
+  </script>
 </body>
 
 </html>

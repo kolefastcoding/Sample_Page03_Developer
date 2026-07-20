@@ -1,171 +1,53 @@
 .c-button {
-  min-height: 48px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding-inline: 28px;
-  font-size: 1.4rem;
-  font-weight: 800;
-  line-height: 1;
-  border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    padding-inline: 32px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    gap: 12px;
+}
+
+.c-button:hover {
+    transform: translateY(-2px);
+}
+
+.c-button__text {
+    display: block;
 }
 
 .c-button__icon {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
 }
 
 .c-button--primary {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+    color: #FFFFFF;
+    background-color: #FF5F49;
+    border-color: var(--color-primary);
 }
 
 .c-button--primary:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
+    color: #FF5F49;
+    background-color: var(--color-white);
+    /* border-color: #ff5f49; */
+    border: 1px solid #ff5f49;
 }
 
-.c-button--primary .c-button__icon {
-  filter: brightness(0) invert(1);
+.c-button--outline {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-color: var(--color-primary);
 }
 
-.c-button--secondary {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
-  background-color: transparent;
-}
-
-.c-button--secondary:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
-}
-
-.c-social {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.c-social__link {
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--color-border);
-  color: var(--color-primary);
-}
-
-.c-social__link:hover {
-  color: var(--color-white);
-  border-color: var(--color-primary);
-  background-color: var(--color-primary);
-}
-
-.c-social__icon {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-}
-
-.c-social__link:hover .c-social__icon {
-  filter: brightness(0) invert(1);
-}
-
-.c-read-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-primary);
-  font-size: 1.3rem;
-  font-weight: 800;
-}
-
-.c-read-more__icon {
-  width: 13px;
-  height: 13px;
-  object-fit: contain;
-}
-
-.c-read-more:hover {
-  color: var(--color-primary-dark);
-}
-
-.c-read-more:hover .c-read-more__icon {
-  filter: brightness(0) invert(1);
-}
-
-.c-theme-toggle {
-  position: fixed;
-  right: 40px;
-  bottom: 40px;
-  z-index: 999;
-  width: 45px;
-  height: 45px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  color: var(--color-white);
-  background-color: var(--color-primary);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  font-size: 1.8rem;
-}
-
-.c-theme-toggle:hover {
-  background-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-}
-
-.c-theme-toggle__icon {
-  line-height: 1;
-}
-
-body.dark-mode {
-  background-color: #000;
-}
-
-body.dark-mode .c-theme-toggle {
-  color: var(--color-primary);
-  background-color: var(--color-white);
-}
-
-/* Testimonial Swiper */
-
-.p-section-testimonial__slider {
-  width: 100%;
-}
-
-.p-section-testimonial__slider .swiper-slide {
-  height: auto;
-}
-
-.p-section-testimonial__pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin-top: 40px;
-  position: relative;
-}
-
-.p-section-testimonial__pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-
-  background-color: #d9d9d9;
-
-  opacity: 1;
-
-  transition: all 0.3s ease;
-}
-
-.p-section-testimonial__pagination .swiper-pagination-bullet-active {
-  width: 24px;
-
-  border-radius: 999px;
-
-  background-color: #143c3c;
+.c-button--outline:hover {
+    color: var(--color-black);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
 }
