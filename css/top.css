@@ -2,6 +2,7 @@
   padding-top: 271px;
   /* padding-bottom: 100px; */
 }
+
 .p-section-hero__label,
 .p-section-testimonial__label,
 .p-section-about__label,
@@ -15,6 +16,7 @@
   line-height: calc(14/14);
   text-transform: uppercase;
 }
+
 .p-section-hero .wrapper {
   position: relative;
   max-width: 1504px;
@@ -34,7 +36,7 @@
 
 .p-section-hero__decoration--crown {
   position: absolute;
-  top: -250px;
+  top: -268px;
   left: 59%;
   width: 250px;
   transform: translateX(-50%) rotate(-4deg);
@@ -57,12 +59,12 @@
 
 .p-section-hero__banner {
   position: absolute;
-  left: 51%;
+  left: 48%;
   z-index: 1;
   width: 1504px;
   transform: translateX(-50%);
   pointer-events: none;
-  top: -270px;
+  top: -360px;
 }
 
 .p-section-hero__image {
