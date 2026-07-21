@@ -16,6 +16,7 @@
 
 .c-button__text {
     display: block;
+    
 }
 
 .c-button__icon {
@@ -25,6 +26,10 @@
     flex: 0 0 auto;
     width: 24px;
     height: 24px;
+    /* color: #FFFFFF; */
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .c-button--primary {
@@ -37,17 +42,17 @@
     color: #FF5F49;
     background-color: var(--color-white);
     /* border-color: #ff5f49; */
-    border: 1px solid #ff5f49;
+    border: 2px solid #ff5f49;
 }
 
 .c-button--outline {
-    color: var(--color-black);
+    color: #FF5F49;
     background-color: var(--color-white);
-    border-color: var(--color-primary);
+    border: 2px solid #FF5F49;
 }
 
 .c-button--outline:hover {
-    color: var(--color-black);
+    color: #FFFFFF;
     background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
